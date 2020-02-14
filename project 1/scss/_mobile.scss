@@ -1,0 +1,83 @@
+@media (max-width: 700px) {
+  .hide-sm {
+    display: none;
+  }
+  //   text styles
+  .x-large {
+    font-size: 3rem;
+  }
+
+  .large {
+    font-size: 2rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  // navbar
+  .navbar {
+    display: block;
+    text-align: center;
+    position: static;
+
+    ul {
+      flex-direction: column;
+      a {
+        display: block;
+
+        &:hover {
+          background: $primary-color;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  h1 {
+    margin-bottom: 1rem;
+  }
+  .landing-2 {
+    height: 150vh;
+  }
+  .boxes {
+    color: #fff;
+
+    grid-template-areas:
+      "box-top"
+      "box-1"
+      "box-2"
+      "box-3"
+      "box-4";
+    grid-gap: 1rem;
+  }
+  .profile-about {
+    .skills {
+      flex-direction: column;
+    }
+  }
+
+  .boxes-2 {
+    text-align: center;
+    grid-template-areas:
+      "box-top box-top "
+      "box-1 box-2"
+      "box-3 box-4";
+    grid-gap: 1rem;
+    .box-top {
+      .line {
+        width: 50%;
+        margin: auto;
+      }
+    }
+  }
+  .boxes-3 {
+    text-align: center;
+    grid-template-areas:
+      "box-top  "
+      "box-1 "
+      "box-2"
+      "box-3";
+    grid-gap: 1rem;
+  }
+}
